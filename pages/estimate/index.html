@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Lykos - Home</title>
+	<link href="/style.css" rel="stylesheet" type="text/css" />
+	<!-- keep this for the header and stuff -->
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+
+	<div class="header">
+		<h1 class="header_text">Lykos</h1>
+		<h4 class="header_text2">Websites</h2>
+			<div class="line"></div>
+			<div class="toolbar">
+				<div class="btnH">
+					<button class="toolbarBtn" onclick="window.location.href = '/index.html';">Info</button>
+			<button class="toolbarBtn" onclick="window.location.href = '/pages/estimate/index.html';">Price Estimator</button>
+			<!-- <button class="toolbarBtn" onclick="window.location.href = '/pages/examples/index.html';">Examples</button> -->
+			<button class="toolbarBtn" onclick="window.location.href = '/pages/email/index.html'">Email Us</button>
+		</div>
+  	</div>
+</div>
+
+<div class="tH">
+	<h1 class="text large">Initail Cost:</h1> <h1 class="text" id="initial">$</h1><br>
+	<h1 class="text large">Hosting:</h1> <h1 class="text" id="hostA">$ monthly</h1>
+	<br><br>
+	<h1 class="text" id="host">$ monthly</h1><br>
+	<h1 class="text" id="hostYear">$ yearly</h1>
+
+	<br>
+</div>
+	<div class="l"></div>
+	<br><br>
+<div class="form">
+
+	<h1 class="text">Type of domain</h1><br><br>
+	<div class="radios">
+		<input onchange="doMth()" type="radio" name="domainType" value="15.00" checked>
+	 	<label class="text">.com</label><br>
+
+		<input onchange="doMth()" type="radio" name="domainType" value="20.00">
+	 	<label class="text">.org</label><br>
+
+		<input onchange="doMth()" type="radio" name="domainType" value="20.00">
+	 	<label class="text">.info</label><br>
+
+		<input onchange="doMth()" type="radio" name="domainType" value="40.00">
+	 	<label class="text">.online</label><br>
+
+		<input onchange="doMth()" type="radio" name="domainType" value="40.00">
+	 	<label class="text">.co</label><br>
+	</div><br>
+
+	<h1 class="text">Email storage</h1><br><br>
+	<div class="radios">
+		<input onchange="doMth()" type="radio" name="emailS" value="0.00">
+	 	<label class="text">No email</label><br>
+
+		<input onchange="doMth()" type="radio" name="emailS" value="1.00" checked>
+	 	<label class="text">2 GB</label><br>
+
+		<input onchange="doMth()" type="radio" name="emailS" value="4.00">
+	 	<label class="text">12 GB</label><br>
+
+		<input onchange="doMth()" type="radio" name="emailS" value="5.00">
+	 	<label class="text">50 GB</label><br>
+	</div><br>
+
+	<h1 class="text">Database storage</h1><br><br>
+	<div class="radios">
+		<input onchange="doMth()" type="radio" name="database" value="0.00" checked>
+	 	<label class="text">No database</label><br>
+
+		<input onchange="doMth()" type="radio" name="database" value="4.00">
+	 	<label class="text">30 GB</label><br>
+
+		<input onchange="doMth()" type="radio" name="database" value="5.00">
+	 	<label class="text">40 GB</label><br>
+
+		<input onchange="doMth()" type="radio" name="database" value="12.00">
+	 	<label class="text">60 GB</label><br>
+
+		<input onchange="doMth()" type="radio" name="database" value="16.00">
+	 	<label class="text">80 GB</label><br>
+
+		<input onchange="doMth()" type="radio" name="database" value="16.00">
+	 	<label class="text">120 GB</label><br>
+
+		<input onchange="doMth()" type="radio" name="database" value="16.00">
+	 	<label class="text">160 GB</label><br>
+
+		<input onchange="doMth()" type="radio" name="database" value="16.00">
+	 	<label class="text">240 GB</label><br>
+
+		<input onchange="doMth()" type="radio" name="database" value="16.00">
+	 	<label class="text">360 GB</label><br>
+
+		<input onchange="doMth()" type="radio" name="database" value="16.00">
+	 	<label class="text">480 GB</label><br>
+	</div>
+
+
+
+
+</div>
+<br><br><br>
+<div class="textHolder c">
+<p class="text">Email us to get a price estimate for the webpage itself!</p>
+</div>
+
+<br><br><br>
+
+<footer class="footer">
+	<div class="Example">
+		<button class="Button" onclick="toTop()">Lykosweb.com</button>
+	</div>
+	<p>All Rights Reserved, Lykos 2022</p>
+</footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="script.js">
+	</script>
+</body>
+</html>
+
+
+<!--

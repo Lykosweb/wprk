@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Roboto:wght@300&display=swap');
+
+body {
+	background-color: rgb(250, 255, 255);
+}
+
+.header_text {
+	font-family: 'Quicksand', sans-serif;
+	text-align: center;
+	color: darkcyan;
+	letter-spacing: 15px;
+	font-size: 40px;
+}.header_text2 {
+	font-family: 'Quicksand', sans-serif;
+	text-align: center;
+	color: darkcyan;
+	letter-spacing: 15px;
+	font-size: 30px;
+}
+
+.line {
+	height: 8px;
+	width: 0%;
+	margin: auto;
+	border-radius: 10px;
+	background-color:darkcyan;
+	animation: slide 4s infinite;
+}
+@keyframes slide {
+	0% {width: 8px;}
+	50% {width: 100%;}
+	100% {width: 8px;}
+}
+
+
+.textholder {
+	width: 50%;
+	margin: auto;
+	margin-top: 50px;
+}
+@media screen and (min-width: 600px) {
+  .textholder {
+	width: 35%;
+  }
+}
+.text {
+	font-family: 'Quicksand', sans-serif;
+	text-align: center;
+	color: darkcyan;
+	font-weight: 600;
+	font-size: 20px;
+}
+.footer {
+	font-family:'Quicksand', sans-serif;
+	text-align: center;
+	color: darkcyan;
+	width: 100%;
+}
+.Example{  
+	text-align: center;
+	margin: auto;
+	width: 100%;
+	font-size: 110%;
+	background-color: darkcyan;
+}
+.Button {
+	color: white;
+	font-family: 'Quicksand', sans-serif;
+	text-align: center;	
+	font-size: 130%;
+	cursor: pointer;
+	padding: 15px;
+	width: 100%;
+	background-color: transparent;
+	border: none;
+}
+.Button:hover {
+	background-color: rgba(0, 0, 0, 0.25);
+}
+
+
+.toolbar {
+	margin-top: 30px;
+	background-color: darkcyan;
+}
+.toolbarBtn {
+	padding: 15px;
+	font-size: 115%;
+	border: none;
+	background-color: transparent;
+	color: white;
+	font-family: "Quicksand" sans-serif;
+	margin-left: -5px;
+}
+.toolbarBtn:hover {
+	background-color: rgba(0, 0, 0, 0.25);
+	cursor: pointer;
+}
+
+.btnH {
+	/* outline: 1px solid black; */
+	width: fit-content;
+	margin: auto;
+	cursor: pointer;
+}
+
+.plans {
+	border-top: 8px solid darkcyan;
+	border-bottom: 8px solid darkcyan;
+	padding-bottom: 8px;
+}
+
+
+.link {
+	color: darkcyan;
+}
+
+
+
+
+/*
+
+
+
