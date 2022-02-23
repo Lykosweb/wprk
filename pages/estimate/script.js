@@ -22,7 +22,7 @@ function doMth() {
 	let database = document.querySelector('input[name="database"]:checked').value;
 
 
-	document.getElementById('initial').innerHTML = Math.round((Number(d)+Number(database))/5+Number(e)+80.00);
+	document.getElementById('initial').innerHTML = Math.round((Number(d)+Number(database))/5+Number(e)+20.00);
 
 	document.getElementById('host').innerHTML = String(Number(d)+Number(database)) + ' monthly';
 
