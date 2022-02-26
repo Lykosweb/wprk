@@ -2,14 +2,14 @@ history.replaceState(null, null, ' ');
 
 function prices() {
 	$('html, body').animate({
-    scrollTop: $(".tH").offset().top - 40
+    scrollTop: $(".tH").offset().top - 40, behavior: 'smooth'
   }, 700);
 }
 
 
 function toTop() {
 	$('html, body').animate({
-    scrollTop: $("html").offset().top - 0
+    scrollTop: $("html").offset().top - 0, behavior: 'smooth'
   }, 800);
   history.replaceState(null, null, ' ');
 }

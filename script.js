@@ -20,3 +20,8 @@ function toTop() {
   history.replaceState(null, null, ' ');
 }
 
+
+
+function hide() {
+	document.getElementById("")
+}

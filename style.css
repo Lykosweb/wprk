@@ -3,6 +3,25 @@
 body {
 	scroll-behavior: smooth;
 	background-color: rgb(250, 255, 255);
+	margin: 0;
+}
+
+.popup {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(100,100,100,0.5);
+	position: fixed;
+}
+.pText {
+/* 	text-align: center;
+ */	
+	position: absolute;
+  font-family: 'Quicksand', sans-serif;
+	top: 50%;
+	left: 25%;
+
+	transform: translateX(-50%);
+	transform: translateY(-50%);
 }
 
 .header_text {
