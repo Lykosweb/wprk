@@ -15,15 +15,28 @@ function toTop() {
 }
 
 
+
 function doMth() {
 	prices();
 	let d = document.querySelector('input[name="domainType"]:checked').value;
 	let e = document.querySelector('input[name="emailS"]:checked').value;
 	let database = document.querySelector('input[name="database"]:checked').value;
 
-
+	d = (d).toLocaleString('en-US', {
+  		style: 'currency',
+ 		currency: 'USD',
+	});
+	e = (e).toLocaleString('en-US', {
+  		style: 'currency',
+ 		currency: 'USD',
+	});
+	database = (database).toLocaleString('en-US', {
+  		style: 'currency',
+ 		currency: 'USD',
+	});
+	
 	document.getElementById('initial').innerHTML = Math.round((Number(d)+Number(database))/5+Number(e)+20.00);
-
+	
 	document.getElementById('host').innerHTML = String(Number(d)+Number(database)) + ' monthly';
 
 	document.getElementById('hostYear').innerHTML = (Number(d)+Number(database))*11;
