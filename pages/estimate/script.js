@@ -15,32 +15,36 @@ function toTop() {
 }
 
 
-
+let d;
+let e;
+let database;
 function doMth() {
 	prices();
-	let d = document.querySelector('input[name="domainType"]:checked').value;
-	let e = document.querySelector('input[name="emailS"]:checked').value;
-	let database = document.querySelector('input[name="database"]:checked').value;
-
-	d = (d).toLocaleString('en-US', {
-  		style: 'currency',
- 		currency: 'USD',
-	});
-	e = (e).toLocaleString('en-US', {
-  		style: 'currency',
- 		currency: 'USD',
-	});
-	database = (database).toLocaleString('en-US', {
-  		style: 'currency',
- 		currency: 'USD',
-	});
+	d = document.querySelector('input[name="domainType"]:checked').value;
+	e = document.querySelector('input[name="emailS"]:checked').value;
+	database = document.querySelector('input[name="database"]:checked').value;
 	
-	document.getElementById('initial').innerHTML = Math.round((Number(d)+Number(database))/5+Number(e)+20.00);
 	
-	document.getElementById('host').innerHTML = String(Number(d)+Number(database)) + ' monthly';
+	let p = 3; //hosting profit
 
-	document.getElementById('hostYear').innerHTML = (Number(d)+Number(database))*11;
+	
+	document.getElementById('initial').innerHTML = (20.00).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+	if (document.getElementById('initial').innerHTML.includes(".00")) {
+		document.getElementById('initial').innerHTML = document.getElementById('initial').innerHTML.replace(".00", "");
+	}
+	document.getElementById('host').innerHTML = (p+Number(d)+Number(database)).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+	if (document.getElementById('host').innerHTML.includes(".00")) {
+		document.getElementById('host').innerHTML = document.getElementById('host').innerHTML.replace(".00", "");
+	}
+	document.getElementById('host').innerHTML +=  ' monthly';
+
+	document.getElementById('hostYear').innerHTML = ((p+Number(d)+Number(database))*12).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+	if (document.getElementById('hostYear').innerHTML.includes(".00")) {
+		document.getElementById('hostYear').innerHTML = document.getElementById('hostYear').innerHTML.replace(".00", "");
+	}
 	document.getElementById('hostYear').innerHTML +=  ' yearly';
+	
+
 
 
 	document.getElementById('initial').innerHTML = '$' + String(document.getElementById('initial').innerHTML)
