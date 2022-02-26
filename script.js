@@ -22,6 +22,6 @@ function toTop() {
 
 
 
-function hide() {
-	document.getElementById("")
-}
+// function hide() {
+// 	document.getElementById("")
+// }
